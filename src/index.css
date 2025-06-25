@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "pricedown";
+    src: url("./pricedown.otf");
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "pricedown";
+
+}
+/* WebKit Browsers: Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  width: 2px; /* Just 2px thin */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.4); /* light gray */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(100, 100, 100, 0.6);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;        /* Enables thin mode */
+  scrollbar-color: rgba(100, 100, 100, 0.4) transparent;
+}
